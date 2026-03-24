@@ -1,0 +1,23 @@
+POST http://localhost:3001/api/locacao
+Content-Type: application/json
+
+{
+    "nome" : "Cleber Machado",
+    "email" : "valedosmachados@gmail.com",
+    "modelo" : "Celta",
+    "ano" : 2012,
+    "tempoAluguel" : "1 semana"
+}
+
+// Container app rodando
+
+POST https://bff-rent-a-car-local.nicewave-cb41f45b.eastus.azurecontainerapps.io/api/locacao
+Content-Type: application/json
+
+{
+    "nome" : "Cleber Machado 2 ",
+    "email" : "valedosmachados@gmail.com",
+    "modelo" : "BMW",
+    "ano" : 2012,
+    "tempoAluguel" : "1 semana"
+}
